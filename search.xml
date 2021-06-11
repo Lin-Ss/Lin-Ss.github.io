@@ -553,8 +553,8 @@
 <li><strong>待解决问题</strong>：如何将显示的图片缩放其大小。</li>
 </ul>
 <p><strong>显示效果展示</strong>：</p>
-<p><img src="https://i.loli.net/2021/06/11/3AYEaO6uJcUp9Kd.png" alt="group-picture-1"></p>
-<p><img src="https://i.loli.net/2021/06/11/7mdYi34hNvjQ65C.png" alt="group-picture-2"></p>
+<p><img src="https://i.loli.net/2021/06/11/3AYEaO6uJcUp9Kd.png"></p>
+<p><img src="https://i.loli.net/2021/06/11/7mdYi34hNvjQ65C.png"></p>
 <p><strong>渲染效果</strong>：</p>
 <p><strong>4<code>*</code>4图片组显示效果</strong> （在Typora中可以选择缩放，但效果只在Typora中作用）</p>
 <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.loli.net/2021/06/11/EJP3YXVsern6qFo.jpg" style="zoom: 25%;" /></div><div class="group-picture-column"><img src="https://i.loli.net/2021/06/11/EJP3YXVsern6qFo.jpg" style="zoom: 25%;" /></div><div class="group-picture-column"><img src="https://i.loli.net/2021/06/11/EJP3YXVsern6qFo.jpg" style="zoom: 25%;" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.loli.net/2021/06/11/EJP3YXVsern6qFo.jpg" style="zoom: 25%;" /></div></div></div>
@@ -564,7 +564,7 @@
 
 <ul>
 <li><code>[class]</code> : 选项参数。值：<code>default</code> | <code>primary</code> | <code>success</code> | <code>info</code> | <code>warning</code> | <code>danger</code> 如果没有指定，则使用浏览器默认风格，在不同浏览器中可能不同。</li>
-<li><code>text</code> : <code>@text</code>使用或不使用<em>空格</em>都可以被指定。E.g（例如）. <code>success @text</code>  <code>success@text</code>.</li>
+<li><code>text</code> : <code>@text</code>使用或不使用<em>空格</em> 都可以被指定。E.g（例如）. <code>success @text</code>  <code>success@text</code>.</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Lorem &#123;% label @ipsum %&#125; &#123;% label primary@dolor sit %&#125; amet, consectetur &#123;% label success@adipiscing elit, %&#125; sed &#123;% label info@do eiusmod %&#125; tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line"></span><br><span class="line">Ut enim *&#123;% label warning @ad %&#125;* minim veniam, quis **&#123;% label danger@nostrud %&#125;** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span><br><span class="line"></span><br><span class="line">Duis aute irure dolor in reprehenderit in voluptate ~~&#123;% label default @velit %&#125;~~ &lt;mark&gt;esse&lt;/mark&gt; cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure>
 
@@ -573,20 +573,20 @@
 <p>Ut enim <em><mark class="label warning">ad</mark></em> minim veniam, quis <strong><mark class="label danger">nostrud</mark></strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <p>Duis aute irure dolor in reprehenderit in voluptate <del><mark class="label default">velit</mark></del> <mark>esse</mark> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <hr>
-<h3 id="Link-Grid"><a href="#Link-Grid" class="headerlink" title="Link Grid"></a>Link Grid</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% linkgrid [image] [delimiter] [comment] %&#125;&#123;% endlinkgrid %&#125;</span><br><span class="line">&lt;!-- Tag Alias --&gt;</span><br><span class="line">&#123;% lg [image] [delimiter] [comment] %&#125;&#123;% endlg %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Link-Grid-Next原文地址"><a href="#Link-Grid-Next原文地址" class="headerlink" title="Link Grid     Next原文地址"></a>Link Grid     <a href="https://theme-next.js.org/docs/tag-plugins/link-grid.html">Next原文地址</a></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% linkgrid [image] [delimiter] [comment] %&#125;&#123;% endlinkgrid %&#125;</span><br><span class="line">&lt;!-- Tag Alias --&gt; （Alias：别名）</span><br><span class="line">&#123;% lg [image] [delimiter] [comment] %&#125;&#123;% endlg %&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><code>[image]</code> : <em>Optional parameter.</em> Default image URL.</li>
-<li><code>[delimiter]</code> : <em>Optional parameter.</em> If the optional delimiter parameter is given, it is interpreted as the delimiter of items in each line.</li>
-<li><code>[comment]</code> : <em>Optional parameter.</em> If the optional comment parameter is given, it is interpreted as the symbol to comment out a line.</li>
+<li><code>[image]</code> : 选项参数，图片默认URL。</li>
+<li><code>[delimiter]</code> :  选项参数，如果选项定界符参数给定，其会显示为每个条目的文字。</li>
+<li><code>[comment]</code> : 选项参数，如果选项注释参数给定，其会显示为每个条目的图片/符号。</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% linkgrid %&#125;</span><br><span class="line">Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png</span><br><span class="line">Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png</span><br><span class="line">Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png</span><br><span class="line">Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png</span><br><span class="line">% Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png</span><br><span class="line">&#123;% endlinkgrid %&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>渲染效果：</strong></p>
 <div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/cat.png"></object>
-<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
-<a href="https://theme-next.js.org/"></a>
+<object class="link-grid-image" data="/images/avatar.gif"></object>
+<p>Theme NexT</p><p>/images/cat.png</p>
+<a href="Stay Simple. Stay NexT."></a>
 </div><div class="link-grid-container">
 <object class="link-grid-image" data="/images/cat.png"></object>
 <p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
