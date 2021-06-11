@@ -527,19 +527,24 @@
 </blockquote></h2><blockquote>
 <p>Hexo原文地址：<a href="https://hexo.io/zh-cn/docs/tag-plugins">https://hexo.io/zh-cn/docs/tag-plugins</a></p>
 </blockquote>
-<h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><p><strong>1.在文章中插入引言，可包含作者、来源和标题。</strong></p>
+<h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><p><strong>1. 在文章中插入引言，可包含作者、来源和标题。</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>2.引用书上的句子</strong></p>
+
+
+<p><strong>2. 引用书上的句子</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote 《David Levithan》, Wide Awake %&#125;</span><br><span class="line">Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>渲染效果</strong>：</p>
 <blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
 <footer><strong>《David Levithan》</strong><cite>Wide Awake</cite></footer></blockquote>
 
-<p><strong>3.引用网络上的文章</strong></p>
+
+
+<p><strong>3. 引用网络上的文章</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote 《Seth Godin》 http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>渲染效果</strong>：</p>
 <blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
 <footer><strong>《Seth Godin》</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
+
 
 
 <h2 id="-3"><a href="#-3" class="headerlink" title=""></a><blockquote class="blockquote-center">
@@ -554,6 +559,7 @@
 <center> 文本居中 </center>
 
 
+
 <h3 id="Next居中"><a href="#Next居中" class="headerlink" title="Next居中"></a>Next居中</h3><p>使用<code>centerquote</code>或简写<code>cq</code>包围文本实现居中。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125; Next居中 &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>渲染效果</strong>:</p>
@@ -561,6 +567,8 @@
 <p>Next居中 </p>
 
 </blockquote>
+
+
 
 <h3 id="Bootstrap-Callout"><a href="#Bootstrap-Callout" class="headerlink" title="Bootstrap Callout"></a>Bootstrap Callout</h3><p>一些Bootstrap官方文档出现的样式。<br>使用方式：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note class_name %&#125; Content (md partial supported) &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
@@ -579,6 +587,8 @@
 </div>
 <div class="note danger"><p>danger </p>
 </div>
+
+
 
 <h2 id="-4"><a href="#-4" class="headerlink" title=""></a><blockquote class="blockquote-center">
 <p>Typora-Markdown定制写法 </p>
@@ -600,9 +610,11 @@
 <h3 id="Table-of-Contents-TOC"><a href="#Table-of-Contents-TOC" class="headerlink" title="Table of Contents (TOC)"></a>Table of Contents (TOC)</h3><p>Input <code>[toc]</code> and press the <code>Return</code> key. This will create a  “Table of Contents” section. The TOC extracts all headers from the document, and its contents are updated automatically as you add to the document.</p>
 <h3 id="Internal-Links"><a href="#Internal-Links" class="headerlink" title="Internal Links"></a>Internal Links</h3><p><strong>You can set the href to headers</strong>, which will create a bookmark that allow you to jump to that section after clicking. For example:</p>
 <p>Command(on Windows: Ctrl) + Click <a href="#block-elements">This link</a> will jump to header <code>Block Elements</code>. To see how to write that, please move cursor or click that link with <code>⌘</code> key pressed to expand the element into markdown source.</p>
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>You can use HTML to style content what pure Markdown does not support. For example, use <code>&lt;span style=&quot;color:red&quot;&gt;this text is red&lt;/span&gt;</code> to add text with red color.</p>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>You can use HTML to style content what pure Markdown does not support. For example, use <code>&lt;span style=&quot;color:red&quot;&gt;this text is red&lt;/span&gt;</code> to add text with red color.</p>
 <h3 id="Embed-Contents"><a href="#Embed-Contents" class="headerlink" title="Embed Contents"></a>Embed Contents</h3><p>Some websites provide iframe-based embed code which you can also paste into Typora. For example:</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">height</span>=<span class="string">&#x27;265&#x27;</span> <span class="attr">scrolling</span>=<span class="string">&#x27;no&#x27;</span> <span class="attr">title</span>=<span class="string">&#x27;Fancy Animated SVG Menu&#x27;</span> <span class="attr">src</span>=<span class="string">&#x27;http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2&#x27;</span> <span class="attr">frameborder</span>=<span class="string">&#x27;no&#x27;</span> <span class="attr">allowtransparency</span>=<span class="string">&#x27;true&#x27;</span> <span class="attr">allowfullscreen</span>=<span class="string">&#x27;true&#x27;</span> <span class="attr">style</span>=<span class="string">&#x27;width: 100%;&#x27;</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+
 
 <h3 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h3><p>You can use the <code>&lt;video&gt;</code> HTML tag to embed videos. For example:</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;xxx.mp4&quot;</span> /&gt;</span></span> //不好用，还是使用插件吧</span><br></pre></td></tr></table></figure>
