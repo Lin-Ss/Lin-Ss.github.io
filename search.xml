@@ -6,6 +6,8 @@
     <content><![CDATA[<p>我要实现的目标📜</p>
 <span id="more"></span>
 
+<h2 id="未来一年目标"><a href="#未来一年目标" class="headerlink" title="未来一年目标"></a>未来一年目标</h2><p>[ ]  考上公务员</p>
+<p>[ ]  </p>
 ]]></content>
       <tags>
         <tag>List</tag>
@@ -145,6 +147,12 @@
       <tags>
         <tag>情感</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>HexoPlugins</title>
+    <url>/2021/06/11/e1-Hexo%E6%8A%80%E5%B7%A7/HexoPlugins/</url>
+    <content><![CDATA[<h3 id="hexo-tag-aplayer"><a href="#hexo-tag-aplayer" class="headerlink" title="hexo-tag-aplayer"></a><a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">hexo-tag-aplayer</a></h3><p>在博客中插入音频</p>
+]]></content>
   </entry>
   <entry>
     <title>Git流式命令</title>
@@ -413,11 +421,6 @@
       <tags>
         <tag>每日心语</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>HexoPlugins</title>
-    <url>/2021/06/11/e1-Hexo%E6%8A%80%E5%B7%A7/HexoPlugins/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hexo-Markdown常用语法</title>
